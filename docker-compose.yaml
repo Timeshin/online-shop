@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: online-shop
+    image: online-shop
+    build: 
+      target: development
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    ports:
+      - '3000:3000'
