@@ -3,12 +3,29 @@
     "target": "ES5",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/AnotherFile/*"]
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/components": [
+        "src/components/index.ts"
+      ],
+      "@/services/*": [
+        "src/services/*"
+      ],
+      "@/types/*": [
+        "src/types/*"
+      ],
+      "@/stores/*": [
+        "src/stores/*"
+      ]
     },
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
@@ -20,14 +37,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strict": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "/public"
-, "next.config.js"  ],
+    "/public",
+    "next.config.js",
+    ".next/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     ".next"

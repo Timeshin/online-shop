@@ -1,0 +1,67 @@
+.skeleton-effect {
+  background: linear-gradient(90deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  border-radius: 6px;
+  animation: skeleton-loading 1.5s linear infinite;
+}
+
+.skeleton {
+  max-height: 460px;
+  max-width: 330px;
+  min-height: 260px;
+  min-width: 160px;
+  flex: 1 1 auto;
+  padding: 30px;
+  display: flex;
+  background: rgba(128, 128, 128, 0.1);
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px;
+  
+  .image {
+    max-width: 220px;
+    max-height: 220px;
+    min-height: 130px;
+    min-width: 130px;
+    @extend .skeleton-effect;
+  }
+
+  .title {
+    align-self: flex-start;
+    height: 10px;
+    width: 50px;
+    background: #eee;
+    @extend .skeleton-effect;
+  }
+
+  .content {
+    height: 60px;
+    width: 100%;
+    @extend .skeleton-effect;
+  }
+
+  .price {
+    align-self: flex-start;
+    width: 85px;
+    height: 20px;
+    @extend .skeleton-effect;
+  }
+
+  .button {
+    align-self: flex-start;
+    width: 175px;
+    height: 40px;
+    border-radius: 90px;
+    @extend .skeleton-effect;
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position-x: 0;
+  } 100% {
+    background-position-x: -200%;
+  }
+}

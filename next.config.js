@@ -3,6 +3,9 @@
  */
 
 const nextConfig = {
+  images: {
+    domains: ['fakestoreapi.com']
+  },
   eslint: {
     dirs: ['src']
   },
@@ -10,6 +13,9 @@ const nextConfig = {
     tsconfigPath: './tsconfig.json'
   },
   reactStrictMode: false,
+  experimental: {
+    appDir: true
+  }
 }
 
 module.exports = nextConfig
