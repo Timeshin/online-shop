@@ -47,7 +47,7 @@ const ProductItem: FC<IProductItem> = observer(({ product }) => {
 					alt='product'
 					src={image}
 					placeholder='blur'
-					blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8L8JQDwAEwQGUkfP71gAAAABJRU5ErkJggg=='
+					blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8um9fGgAHOgKpJTTPlwAAAABJRU5ErkJggg=='
 					className={classes.image}
 					width={220}
 					height={220}

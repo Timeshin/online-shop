@@ -1,7 +1,7 @@
 # online-shop.
- 
+
 #### Application: https://online-shop-bice.vercel.app/
- 
+
 ### install dependencies
 
 `npm install`
