@@ -6,6 +6,7 @@ import { IProduct } from '@/types/services.interface'
 import Image from 'next/image'
 import ProductsStore from '@/stores/ProductsStore'
 import { IProductInCart } from '@/types/ProductsStore.interface'
+import { enableStaticRendering } from 'mobx-react-lite'
 
 import { Button, Counter } from '@/components'
 
@@ -14,6 +15,7 @@ import HeartRed from 'public/icons/heartRed.svg'
 
 import classes from './ProductItem.module.scss'
 
+enableStaticRendering(typeof window === 'undefined')
 interface IProductItem {
 	product: IProduct
 }

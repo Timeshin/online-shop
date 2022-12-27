@@ -1,56 +1,56 @@
 @import '@/styles/variables.scss';
 
 .counter {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 11px;
-  width: 120px;
-  height: 40px;
-  border-radius: 30px;
-  left: 60px;
-  background: #F5F5F7;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 11px;
+	width: 120px;
+	height: 40px;
+	border-radius: 30px;
+	left: 60px;
+	background: #f5f5f7;
 
-  .minus {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10px;
-    height: 15px;
-    cursor: pointer;
+	.minus {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 10px;
+		height: 15px;
+		cursor: pointer;
 
-    &::before {
-      content: '';
-      position: absolute;
-      background-color: $primary;
-      width: 10px;
-      height: 2px;
-      cursor: pointer;
-      opacity: .3;
-    }
-  }
+		&::before {
+			content: '';
+			position: absolute;
+			background-color: $primary;
+			width: 10px;
+			height: 2px;
+			cursor: pointer;
+			opacity: 0.3;
+		}
+	}
 
-  .count {
-    font-weight: 500;
-    color: $primary;
-    width: 10px;
-    font-size: 12px;
-  }
+	.count {
+		font-weight: 500;
+		color: $primary;
+		width: 10px;
+		font-size: 12px;
+	}
 
-  .plus {
-    @extend .minus;
-    margin-right: 15px;
+	.plus {
+		@extend .minus;
+		margin-right: 15px;
 
-    &::after {
-      content: '';
-      position: absolute;
-      transform: rotate(90deg);
-      width: 10px;
-      height: 2px;
-      opacity: .3;
-      background-color: $primary;
-    }
-  }
+		&::after {
+			content: '';
+			position: absolute;
+			transform: rotate(90deg);
+			width: 10px;
+			height: 2px;
+			opacity: 0.3;
+			background-color: $primary;
+		}
+	}
 }
